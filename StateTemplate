@@ -1,0 +1,24 @@
+abstract class StateTemplate
+    {
+        StateEngine stateEngine;
+        public StateTemplate(StateEngine stateEngine)
+        {
+            this.stateEngine = stateEngine;
+        }
+
+        public abstract void Execute();
+
+        public abstract void Tick();
+
+        public abstract void OnEnter();
+
+        public abstract void OnExit();
+
+        void SwitchState(StateTemplate newState)
+        {
+            OnExit();
+            stateEngine.CurrentState = newState;
+        }
+
+
+    }
