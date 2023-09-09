@@ -1,0 +1,17 @@
+class StateEngine
+    {
+        //use void Start() if using Unity
+        public StateEngine()
+        {
+            CurrentState = new TestState(this);
+        }
+
+      
+
+        public StateTemplate CurrentState {get; set;}
+
+
+        //if using Unity create void Update() and run currentState.Tick();
+
+
+    }
