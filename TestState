@@ -1,0 +1,27 @@
+class TestState : StateTemplate
+    {
+        StateEngine stateEngine;
+        public TestState(StateEngine stateEngine) : base(stateEngine)
+        {
+            this.stateEngine = stateEngine;
+        }
+        public override void Execute()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void OnEnter()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void OnExit()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Tick()
+        {
+            throw new NotImplementedException();
+        }
+    }
